@@ -5,6 +5,7 @@
 # Nota: Primero Ejecutar el DUMP para generar el Scheme "va_alquileres"
 
 # 1) Completar la Tabla "contrata" desde Workbench y pegar el código generado (Consigna Eliminatoria)
+
 ALTER TABLE `va_alquileres`.`contrata` 
 ADD COLUMN `CUIL` VARCHAR(20) NULL AFTER `CodServicio`,
 ADD PRIMARY KEY (`NroEvento`, `CodInstalacion`, `fechadesde`, `horadesde`, `CodServicio`);
