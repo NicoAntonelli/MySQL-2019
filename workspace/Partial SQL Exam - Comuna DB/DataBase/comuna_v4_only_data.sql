@@ -152,6 +152,7 @@ INSERT INTO `comuna`.`competencia` (`nro_evento`, `codigo_tipo_competencia`, `de
   (3, 1, 'tercer torneo de asadores arg', '2017-10-01 18:00:00', '2017-12-01 15:00:00', '2 playstation 4', 100.00, 100100),
   (3, 3, 'maraton 6km solidario', '2019-08-27 21:00:00', '2019-08-27 23:00:00', 'tv led 52 plugadas 4k', 350.00, 300300),
   (3, 4, 'carrera en bici por la ciudad 20km', '2019-08-28 02:00:00', '2019-08-28 04:00:00', 'tv led 52 pulgadas 4k', 350.00, 300300),
+  (4, 3, 'maraton preparcial', '2018-09-23 13:30:00', '2018-09-23 15:30:00', 'aprobar el preparcial', 1000.00, 500500),
   (4, 5, 'horse games 2019', '2019-09-02 17:00:00', '2019-09-02 19:00:00', 'silla de montar de diamante', 1600.00, 500500),
   (5, 6, 'torneo internacional de ajedrez', '2018-07-02 15:00:00', '2018-07-05 19:00:00', '100.000 pesos', 150.00, 100100),
   (6, 2, 'segunda carrera embolsado', '2018-11-11 18:00:00', '2018-11-11 20:30:00', 'playstation 3 usada', 200.00, 300300),

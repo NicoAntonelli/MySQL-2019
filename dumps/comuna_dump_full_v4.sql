@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.16, for Win64 (x86_64)
 --
 -- Host: localhost    Database: comuna
 -- ------------------------------------------------------
--- Server version	8.0.17
+-- Server version	8.0.16
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
+ SET NAMES utf8 ;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `alquiler`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `alquiler` (
   `nro_evento` int(10) unsigned NOT NULL,
   `codigo_recurso` int(10) unsigned NOT NULL,
@@ -49,7 +49,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `artista`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `artista` (
   `cuit` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -79,7 +79,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `competencia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `competencia` (
   `nro_evento` int(10) unsigned NOT NULL,
   `codigo_tipo_competencia` int(10) unsigned NOT NULL,
@@ -104,7 +104,7 @@ CREATE TABLE `competencia` (
 
 LOCK TABLES `competencia` WRITE;
 /*!40000 ALTER TABLE `competencia` DISABLE KEYS */;
-INSERT INTO `competencia` VALUES (1,1,'cuarto torneo de asadores arg','2018-10-01 18:00:00','2018-12-01 14:00:00','playstation 4 pro',200.00,100100),(1,2,'super carrera de embolsados','2018-10-01 18:00:00','2018-10-01 19:00:00','playstation 3',300.00,300300),(1,3,'maraton 60 km SN-Ros','2017-10-05 15:20:00','2017-10-05 22:20:00','tv led 52 pulgadas 4k',200.00,100100),(1,4,'carrera en bici por las sierras 15km','2017-09-02 14:00:00','2017-09-02 18:00:00','20.000 pesos',150.00,500500),(2,1,'torneo mega de asadores','2018-01-27 19:00:00','2018-01-27 20:00:00','parrilla a estrenar',750.00,300300),(2,2,'primer carrera embolsado','2018-11-11 18:00:00','2018-11-11 20:00:00','x-box one x',200.00,100100),(3,1,'tercer torneo de asadores arg','2017-10-01 18:00:00','2017-12-01 15:00:00','2 playstation 4',100.00,100100),(3,3,'maraton 6km solidario','2019-08-27 21:00:00','2019-08-27 23:00:00','tv led 52 plugadas 4k',350.00,300300),(3,4,'carrera en bici por la ciudad 20km','2019-08-28 02:00:00','2019-08-28 04:00:00','tv led 52 pulgadas 4k',350.00,300300),(4,5,'horse games 2019','2019-09-02 17:00:00','2019-09-02 19:00:00','silla de montar de diamante',1600.00,500500),(5,6,'torneo internacional de ajedrez','2018-07-02 15:00:00','2018-07-05 19:00:00','100.000 pesos',150.00,100100),(6,2,'segunda carrera embolsado','2018-11-11 18:00:00','2018-11-11 20:30:00','playstation 3 usada',200.00,300300),(6,6,'torneo nacional de ajedrez','2018-10-05 15:30:00','2018-10-08 16:00:00','50.000 pesos',100.00,100100);
+INSERT INTO `competencia` VALUES (1,1,'cuarto torneo de asadores arg','2018-10-01 18:00:00','2018-12-01 14:00:00','playstation 4 pro',200.00,100100),(1,2,'super carrera de embolsados','2018-10-01 18:00:00','2018-10-01 19:00:00','playstation 3',300.00,300300),(1,3,'maraton 60 km SN-Ros','2017-10-05 15:20:00','2017-10-05 22:20:00','tv led 52 pulgadas 4k',200.00,100100),(1,4,'carrera en bici por las sierras 15km','2017-09-02 14:00:00','2017-09-02 18:00:00','20.000 pesos',150.00,500500),(2,1,'torneo mega de asadores','2018-01-27 19:00:00','2018-01-27 20:00:00','parrilla a estrenar',750.00,300300),(2,2,'primer carrera embolsado','2018-11-11 18:00:00','2018-11-11 20:00:00','x-box one x',200.00,100100),(3,1,'tercer torneo de asadores arg','2017-10-01 18:00:00','2017-12-01 15:00:00','2 playstation 4',100.00,100100),(3,3,'maraton 6km solidario','2019-08-27 21:00:00','2019-08-27 23:00:00','tv led 52 plugadas 4k',350.00,300300),(3,4,'carrera en bici por la ciudad 20km','2019-08-28 02:00:00','2019-08-28 04:00:00','tv led 52 pulgadas 4k',350.00,300300),(4,3,'maraton preparcial','2018-09-23 13:30:00','2018-09-23 15:30:00','aprobar el preparcial',1000.00,500500),(4,5,'horse games 2019','2019-09-02 17:00:00','2019-09-02 19:00:00','silla de montar de diamante',1600.00,500500),(5,6,'torneo internacional de ajedrez','2018-07-02 15:00:00','2018-07-05 19:00:00','100.000 pesos',150.00,100100),(6,2,'segunda carrera embolsado','2018-11-11 18:00:00','2018-11-11 20:30:00','playstation 3 usada',200.00,300300),(6,6,'torneo nacional de ajedrez','2018-10-05 15:30:00','2018-10-08 16:00:00','50.000 pesos',100.00,100100);
 /*!40000 ALTER TABLE `competencia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,7 +114,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `espectaculo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `espectaculo` (
   `nro_evento` int(10) unsigned NOT NULL,
   `nro_espectaculo` int(10) unsigned NOT NULL,
@@ -149,7 +149,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `evento`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `evento` (
   `nro` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -175,7 +175,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `jurado`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `jurado` (
   `dni` int(10) unsigned NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -202,7 +202,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `lugar`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `lugar` (
   `codigo` int(10) unsigned NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -228,7 +228,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `organizador`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `organizador` (
   `dni_persona` int(10) unsigned NOT NULL,
   `nro_evento` int(10) unsigned NOT NULL,
@@ -255,7 +255,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `participante`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `participante` (
   `dni_persona` int(10) unsigned NOT NULL,
   `nro_evento` int(10) unsigned NOT NULL,
@@ -285,7 +285,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `persona`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `persona` (
   `dni` int(10) unsigned NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -313,7 +313,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `recurso`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `recurso` (
   `codigo` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -337,7 +337,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tipo_competencia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `tipo_competencia` (
   `codigo` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -362,7 +362,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `valor_diario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `valor_diario` (
   `codigo_recurso` int(10) unsigned NOT NULL,
   `fecha_desde` date NOT NULL,
@@ -381,10 +381,6 @@ LOCK TABLES `valor_diario` WRITE;
 INSERT INTO `valor_diario` VALUES (1,'2018-06-01',200.00),(1,'2019-01-01',300.00),(1,'2019-06-01',400.00),(2,'2018-05-01',700.00),(2,'2019-01-10',1000.00),(2,'2019-08-12',1200.00),(3,'2018-09-01',1000.00),(3,'2019-04-30',2000.00),(3,'2019-07-02',1500.00),(4,'2019-03-02',750.00),(5,'2019-09-19',2500.00);
 /*!40000 ALTER TABLE `valor_diario` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'comuna'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -395,4 +391,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-23 12:10:59
+-- Dump completed on 2019-11-24  1:41:26

@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.16, for Win64 (x86_64)
 --
 -- Host: localhost    Database: comuna
 -- ------------------------------------------------------
--- Server version	8.0.17
+-- Server version	8.0.16
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
+ SET NAMES utf8 ;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `alquiler`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `alquiler` (
   `nro_evento` int(10) unsigned NOT NULL,
   `codigo_recurso` int(10) unsigned NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `alquiler` (
 
 DROP TABLE IF EXISTS `artista`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `artista` (
   `cuit` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE `artista` (
 
 DROP TABLE IF EXISTS `competencia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `competencia` (
   `nro_evento` int(10) unsigned NOT NULL,
   `codigo_tipo_competencia` int(10) unsigned NOT NULL,
@@ -84,7 +84,7 @@ CREATE TABLE `competencia` (
 
 DROP TABLE IF EXISTS `espectaculo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `espectaculo` (
   `nro_evento` int(10) unsigned NOT NULL,
   `nro_espectaculo` int(10) unsigned NOT NULL,
@@ -109,7 +109,7 @@ CREATE TABLE `espectaculo` (
 
 DROP TABLE IF EXISTS `evento`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `evento` (
   `nro` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -125,7 +125,7 @@ CREATE TABLE `evento` (
 
 DROP TABLE IF EXISTS `jurado`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `jurado` (
   `dni` int(10) unsigned NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -142,7 +142,7 @@ CREATE TABLE `jurado` (
 
 DROP TABLE IF EXISTS `lugar`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `lugar` (
   `codigo` int(10) unsigned NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE `lugar` (
 
 DROP TABLE IF EXISTS `organizador`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `organizador` (
   `dni_persona` int(10) unsigned NOT NULL,
   `nro_evento` int(10) unsigned NOT NULL,
@@ -175,7 +175,7 @@ CREATE TABLE `organizador` (
 
 DROP TABLE IF EXISTS `participante`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `participante` (
   `dni_persona` int(10) unsigned NOT NULL,
   `nro_evento` int(10) unsigned NOT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE `participante` (
 
 DROP TABLE IF EXISTS `persona`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `persona` (
   `dni` int(10) unsigned NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -213,7 +213,7 @@ CREATE TABLE `persona` (
 
 DROP TABLE IF EXISTS `recurso`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `recurso` (
   `codigo` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -227,7 +227,7 @@ CREATE TABLE `recurso` (
 
 DROP TABLE IF EXISTS `tipo_competencia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `tipo_competencia` (
   `codigo` int(10) unsigned NOT NULL,
   `descripcion` varchar(45) NOT NULL,
@@ -242,7 +242,7 @@ CREATE TABLE `tipo_competencia` (
 
 DROP TABLE IF EXISTS `valor_diario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `valor_diario` (
   `codigo_recurso` int(10) unsigned NOT NULL,
   `fecha_desde` date NOT NULL,
@@ -251,10 +251,6 @@ CREATE TABLE `valor_diario` (
   CONSTRAINT `valor_diario_recurso` FOREIGN KEY (`codigo_recurso`) REFERENCES `recurso` (`codigo`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping events for database 'comuna'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -265,4 +261,4 @@ CREATE TABLE `valor_diario` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-23 12:10:37
+-- Dump completed on 2019-11-24  1:40:47
